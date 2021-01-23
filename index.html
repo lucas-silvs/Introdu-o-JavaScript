@@ -6,9 +6,19 @@
         </title>
         <meta charset="utf-8">
     </head>
-    <body>
+    <body onload="load()">
         <script type="text/javascript" src="js/main.js"></script>
-        <h1>Minha pagina</h1>
+        <button type="button" onclick="botao()"> Clique aqui </button>
+        <button type="button" onclick="redirecionar()"> Levar para outra página </button>
+        <h3 id='Agradecimento' onmouseover="trocar(this)" onmouseout='voltar(this)'></h3>
+
+    <select onchange="funcaochange(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+
+    </select>
+
 
     </body>
 </html>
